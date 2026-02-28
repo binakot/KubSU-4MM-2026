@@ -11,8 +11,10 @@
 
 ---
 
+# PYTHON
+
 ```bash
-$ python3 -m venv .venv
+$ python -m venv .venv
 
 # LINUX/MACOS
 $ source .venv/bin/activate 
@@ -20,19 +22,15 @@ $ source .venv/bin/activate
 $ .venv\Scripts\activate
 
 $ where python
-$ where python3
+$ where pip
 
+$ python -m pip install --upgrade pip
 $ python main.py
-$ python3 main.py
 ```
 
 ```bash
 $ pip install "fastapi[standard]"
 
-$ pip freeze > requirements.txt
-```
-
-```bash
 $ fastapi dev main.py
 
 $ curl -X 'GET' \
@@ -44,13 +42,29 @@ $ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
+* [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
 ```bash
 $ pip install ruff
-$ ruff check --verbose
-$ ruff format --verbose
+$ ruff check
+$ ruff format
 ```
 
 ```bash
 $ pip install pre-commit
 $ pre-commit install
+```
+
+```bash
+$ pip install mypy
+$ mypy .
+```
+
+```bash
+$ pip install pytest
+$ pytest
+```
+
+```bash
+$ pip freeze > requirements.txt
 ```
