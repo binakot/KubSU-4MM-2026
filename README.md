@@ -49,3 +49,8 @@ $ pip install ruff
 $ ruff check --verbose
 $ ruff format --verbose
 ```
+
+```bash
+$ pip install pre-commit
+$ pre-commit install
+```
