@@ -46,7 +46,7 @@ rich==14.3.3
 rich-toolkit==0.19.7
 rignore==0.7.6
 ruff==0.15.4
-sentry-sdk==2.53.0
+sentry-sdk==2.54.0
 shellingham==1.5.4
 starlette==0.52.1
 typer==0.24.1
